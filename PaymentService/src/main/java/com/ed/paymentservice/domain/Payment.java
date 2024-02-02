@@ -1,4 +1,4 @@
-package com.ed.transactionservice.model;
+package com.ed.paymentservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,7 +7,6 @@ import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -16,21 +15,27 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 @ToString
-public class Transaction {
+public class Payment {
     @Id
     @SequenceGenerator(
-            name = "transaction_id_sequence",
-            sequenceName = "transaction_id_sequence"
+            name = "payment_id_sequence",
+            sequenceName = "payment_id_sequence"
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "transaction_id_sequence"
+            generator = "payment_id_sequence"
     )
     private Long seqNo;
-    private UUID transactionId;
-    private UUID fromId;
-    private UUID toId;
-    private BigDecimal amount;
+    private UUID paymentId;
+    private UUID clientId;
+    private UUID driverId;
+    private Integer distance;
+    private Float rate;
+    private String coupon;
+    private Float discount;
+    private PayMethod payMethod;
+    private PaymentState paymentState;
+    private LocalDateTime transactionTime;
     @CreationTimestamp
     private LocalDateTime createAt;
 }

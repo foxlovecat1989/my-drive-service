@@ -1,12 +1,12 @@
 server:
-  port: 8000
+  port: 8100
 
 spring:
   application:
-    name: transaction-service
+    name: payment-service
   datasource:
     password: password
-    url: jdbc:postgresql://localhost:5432/transaction
+    url: jdbc:postgresql://localhost:5432/payment
     username: ed
   jpa:
     hibernate:

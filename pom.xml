@@ -12,6 +12,8 @@
   <modules>
     <module>EurekaSever</module>
     <module>TransactionService</module>
+      <module>Feign</module>
+    <module>PaymentService</module>
   </modules>
 
   <properties>

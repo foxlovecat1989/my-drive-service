@@ -1,7 +1,8 @@
 package com.ed.transactionservice.service;
 
-import com.ed.transactionservice.dto.TransactionRequest;
-import com.ed.transactionservice.model.Transaction;
+
+import com.ed.clients.transaction.TransactionRequest;
+import com.ed.transactionservice.domain.Transaction;
 import com.ed.transactionservice.repo.TransactionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
