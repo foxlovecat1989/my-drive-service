@@ -11,7 +11,6 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>EurekaSever</module>
-    <module>TransactionService</module>
       <module>Feign</module>
     <module>PaymentService</module>
       <module>ClientService</module>

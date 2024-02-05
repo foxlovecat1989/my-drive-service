@@ -1,9 +1,9 @@
 package com.ed.paymentservice;
 
-import com.ed.paymentservice.domain.PayMethod;
-import com.ed.paymentservice.domain.Payment;
-import com.ed.paymentservice.record.PaymentRequest;
-import com.ed.paymentservice.service.PaymentService;
+import com.ed.clients.payment.PayMethod;
+import com.ed.clients.payment.PaymentRequest;
+import com.ed.paymentservice.payment.model.entity.Payment;
+import com.ed.paymentservice.payment.service.PaymentService;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
