@@ -14,7 +14,7 @@
     <module>TransactionService</module>
       <module>Feign</module>
     <module>PaymentService</module>
-      <module>UserService</module>
+      <module>ClientService</module>
   </modules>
 
   <properties>
